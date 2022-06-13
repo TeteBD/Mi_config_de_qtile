@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# TeteBD
+
+function instalar(){
+    clear
+    sudo paru -S qtile pamixer scrot kitty redshift gnome-calculator nautilus htop picom dunst feh numlockx xautolock playerctl rofi betterlockscreen volctl python-pip nerd-fonts-hack --noconfirm
+pip install psutil PyQt5
+betterlockscreen -u ~/.config/qtile/res/images/background.png
+feh --bg-fill ~/.config/qtile/res/images/background.png
+sudo mv ~/.config/qtile/res/scripts/powermenu /usr/bin
+mv ~/.config/qtile/res/config/* ~/.config
+}
+
+echo "[1 -> Instalar Qtile]"
+echo "[0 ->          Salir]"
+read -rp "-->" execute
+
+if [ "$execute" == "1" ]; then
+    instalar
+fi
+
+if [ "$execute" == "0" ]; then
+    exit 0
+fi
