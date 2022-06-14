@@ -5,6 +5,7 @@
 Instala qtile y dependencias:
 
 ```
+- 0 Paru
 - 1 pamixer
 - 2 scrot
 - 3 betterlockscreen
@@ -26,6 +27,8 @@ Clona este repositorio y copia mis configuraciones:
 ```bash
 git clone https://github.com/TeteBD/Mi_config_de_qtile.git ~/.config/qtile;bash ~/.config/qtile/autoQtile
 ```
+
+##Si el script no funciona cargar las configuraciones manualmente
 
 Cuando todo este listo puedes iniciar sesión con Qtie. Pero los atajos de teclaco no funcionarán si no tienes los mismos programas y configuraciones que yo, puedes cambiar los atajos de teclado o instalar los programas y configuraciones que uso. En keys.py puedes ver y cambiar los atajos de teclado.
 
