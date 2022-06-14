@@ -10,6 +10,7 @@ betterlockscreen -u ~/.config/qtile/res/images/background.png
 feh --bg-fill ~/.config/qtile/res/images/background.png
 sudo mv ~/.config/qtile/res/scripts/powermenu /usr/bin
 mv ~/.config/qtile/res/config/* ~/.config
+sudo mv ~/.config/qtile/res/config/rofi/theme.rasi /usr/share/rofi/themes
 }
 
 echo "[1 -> Instalar Qtile]"
